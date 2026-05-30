@@ -1,3 +1,10 @@
+/*
+* Dylan Waters
+* 5/29/26
+
+  Vertex class header file. This class will be used to create vertices.
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -6,9 +13,13 @@ using namespace std;
 
 class vertex{
   public:
-  
+    vertex();
+    ~vertex();
+
+    string& getLabel();
+    void setLabel(string label);
   private:
-    
+    string label;
 };
 
 #endif

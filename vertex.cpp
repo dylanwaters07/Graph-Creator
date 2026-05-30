@@ -5,7 +5,18 @@
 #include "vertex.h"
 using namespace std;
 
-placeholder(){
-    
-    
+vertex::vertex(){
+  label = "";
+}
+
+vertex::~vertex(){
+  // Destructor
+}
+
+string& vertex::getLabel(){
+  return label;
+}
+
+void vertex::setLabel(string label){
+  this->label = label;
 }
